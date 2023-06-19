@@ -1,38 +1,77 @@
-.App {
+.github-container {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.github-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.github-input {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.github-input label {
+  margin-right: 10px;
+  font-size: 18px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.github-input input {
+  padding: 8px;
+  font-size: 16px;
+}
+
+.github-input button {
+  padding: 8px 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.github-result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.github-avatar {
+  margin-bottom: 20px;
+}
+
+.github-avatar img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.github-info {
+  margin-bottom: 20px;
+}
+
+.github-name {
+  font-size: 20px;
+  color: #333;
+}
+
+.github-repos {
+  font-size: 16px;
+  color: #666;
+}
+
+.github-placeholder {
+  font-size: 18px;
 }
