@@ -8,7 +8,11 @@ const Github = () => {
 
   const fetchData = async () => {
     try {
-      const res = await axios(`https://api.github.com/users/${user}`);
+      const res = await axios.get(`https://api.github.com/users/${user}`, {
+        headers: {
+          Authorization: "Bearer YOUR_ACCESS_TOKEN",
+        },
+      });
       setResult(res.data);
     } catch (err) {
       console.log(err);
@@ -44,7 +48,7 @@ const Github = () => {
               <img src={result.avatar_url} alt="User Avatar" />
             </div>
             <div className="github-info">
-              <h2 className="github-name">User Name: {result.name}</h2>
+              <h2 className="github-name">USER NAME:{result.name}</h2>
               <p className="github-repos">
                 Public Repositories: {result.public_repos}
               </p>
