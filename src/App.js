@@ -36,7 +36,10 @@ const Github = () => {
 
       {result ? (
         <div className="github-user">
+          Here it is...
           <img src={result.avatar_url} alt="User Avatar" />
+          <h1>Name: {result.name}</h1>
+          <p>Repos: {result.public_repos}</p>
         </div>
       ) : (
         <p>Enter username to find one...</p>
